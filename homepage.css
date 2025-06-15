@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:root {
+  --sky-night: linear-gradient(#021B2F, #0B385A, #1C88C0, #2DBAE1, #90E6FF);
+  --sky-morning: linear-gradient(#0487E2, #0463CA, #B0D6F5, #65C2F5, #09B1EC);
+  --words-color: white;
+  --background-section2:#1a0817;
+}
+
+body {
+  background: var(--sky-night);
+  height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  color: var(--words-color);
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header a {
+  color: var(--words-color);
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+nav li:hover,
+nav .active {
+  background-color: #1C88C0;
+  border-radius: 25px;
+}
+
+/* MAIN */
+main {
+  max-width: 100vw;
+}
+
+.section1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section1 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.moon2 {
+  mix-blend-mode: screen;
+}
+
+.stars1 {
+  top: -35px;
+}
+
+.section2 {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px;
+  color: var(--words-color);
+  background:var(--background-section2);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.section2 p{
+    text-align: justify;
+    margin-bottom: 50px;
+}
